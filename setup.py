@@ -1,5 +1,4 @@
 from setuptools import setup, find_packages
-from os.path import abspath, dirname, join
 
 requirements = []
 with open('README.md', 'r') as f:

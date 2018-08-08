@@ -1,5 +1,6 @@
+check-manifest
 coveralls
 coverage
-pytest
 flake8
+pytest
 -r requirements.txt

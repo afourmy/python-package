@@ -3,3 +3,7 @@ include *.md
 
 # Include the license file
 include LICENSE.txt
+
+# Include the requirements files
+include requirements.txt
+include requirements_dev.txt

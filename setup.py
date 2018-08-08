@@ -8,7 +8,7 @@ with open(join(path, 'README.md'), encoding='utf-8') as f:
 
 
 setup(
-    name='sample', 
+    name='sample',
     version='1.2.0',
     description='A sample Python project',
     long_description=long_description,

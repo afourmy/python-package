@@ -1,16 +1,15 @@
 from setuptools import setup, find_packages
 from os.path import abspath, dirname, join
 
-path = abspath(dirname(__file__))
-
-with open(join(path, 'README.md'), encoding='utf-8') as f:
+requirements = []
+with open('README.md', 'r') as f:
     long_description = f.read()
 
 
 setup(
     name='sample',
-    version='1.2.0',
-    description='A sample Python project',
+    version='1.0.0',
+    description='A sample Python package',
     long_description=long_description,
     long_description_content_type='text/markdown',
     url='https://github.com/afourmy/python-package',
@@ -24,17 +23,13 @@ setup(
         'Programming Language :: Python :: 3.5',
         'Programming Language :: Python :: 3.6',
     ],
-    keywords='sample setuptools development',
-    packages=find_packages(exclude=['contrib', 'docs', 'tests']),
-    install_requires=['peppercorn'],
+    keywords='python package pytest coverage tox',
+    packages=find_packages(exclude=('contrib', 'docs', 'tests')),
+    install_requires=requirements,
     extras_require={
-        'dev': ['check-manifest'],
-        'test': ['coverage'],
+        'dev': ['check-manifest', 'coverage'],
     },
     project_urls={
-        'Bug Reports': 'https://github.com/pypa/sampleproject/issues',
-        'Funding': 'https://donate.pypi.org',
-        'Say Thanks!': 'http://saythanks.io/to/example',
-        'Source': 'https://github.com/pypa/sampleproject/',
+        'Source': 'https://github.com/afourmy/python-package',
     },
 )

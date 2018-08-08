@@ -1,7 +1,8 @@
-# the inclusion of the tests module is not meant to offer best practices for
-# testing in general, but rather to support the `find_packages` example in
-# setup.py that excludes installing the "tests" package
+from sample.child import Child
+from sample.parent import Parent
 
 
 def test_success():
-    assert True
+    p1, p2 = Parent('p1', 35), Parent('p2', 30)
+    c1 = Child('c1', 10, p1, p2)
+    print(c1)

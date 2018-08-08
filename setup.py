@@ -1,14 +1,14 @@
 from setuptools import setup, find_packages
-from os import path
+from os.path import abspath, dirname, join
 
-path = path.abspath(path.dirname(__file__))
+path = abspath(dirname(__file__))
 
-with open(path.join(path, 'README.md'), encoding='utf-8') as f:
+with open(join(path, 'README.md'), encoding='utf-8') as f:
     long_description = f.read()
 
 
 setup(
-    name='sampleproject', 
+    name='sample', 
     version='1.2.0',
     description='A sample Python project',
     long_description=long_description,

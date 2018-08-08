@@ -1,13 +1,33 @@
-# general things to ignore
+# package files
 build/
 dist/
 *.egg-info/
 *.egg
-*.py[cod]
-__pycache__/
-*.so
-*~
 
-# due to using tox and pytest
+# byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+
+# tox 
 .tox
 .cache
+
+# tests and coverage
+*.pytest_cache
+.coverage
+
+# database & logs
+*.db
+*.db-journal
+*.log
+
+# venv
+env
+venv
+
+# other
+.DS_Store
+
+# sphinx docs 
+_build
+_templates

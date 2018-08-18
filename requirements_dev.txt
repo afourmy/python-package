@@ -2,5 +2,9 @@ check-manifest
 coveralls
 coverage
 flake8
+flake8-print
+mypy
+pep8-naming
 pytest
+tox
 -r requirements.txt

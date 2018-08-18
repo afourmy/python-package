@@ -11,6 +11,7 @@ __pycache__/
 # tox 
 .tox
 .cache
+.mypy_cache
 
 # tests and coverage
 *.pytest_cache
